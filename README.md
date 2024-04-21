@@ -6,12 +6,12 @@
 #### This project is an extension of improving the models previously developed for Kaggle Competition where we placed within the top 5%. The project aims at redoing the project with added production using best practices learned from class MGSC-695-076
 
 ### Meet the Team 
-1. Aasna - Product Manager
+1. Product Manager - Aasna
 2. Machine Learning Engineer - Arham
 3. ML Ops - Krishan
 4. Data Engineer - Yash
 5. Cloud SME - Nandani
-6. Mahrukh - Business Analyst
+6. Business Analyst = Mahrukh
 
 ## Branches: 
 1. Main: For Final Product [Owner - Team]
