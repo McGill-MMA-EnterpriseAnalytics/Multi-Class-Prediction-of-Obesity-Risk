@@ -11,7 +11,7 @@
 3. ML Ops - Krishan
 4. Data Engineer - Yash
 5. Cloud SME - Nandani
-6. Business Analyst = Mahrukh
+6. Business Analyst - Mahrukh
 
 ## Branches: 
 1. Main: For Final Product [Owner - Team]
