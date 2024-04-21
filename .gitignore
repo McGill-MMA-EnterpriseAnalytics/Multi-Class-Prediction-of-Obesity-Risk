@@ -1,0 +1,23 @@
+# Ignore .pkl files
+*.pkl
+
+# Ignore large files
+# Adjust the file size limit as needed
+*.{mp4,avi,mov,wmv,flv,mkv,gif,png,jpg,jpeg,zip,gz,bz2,7z,tar,xz,iso,dmg,img}
+
+# Ignore AutoML-related files
+# Adjust this section based on specific AutoML tools or file patterns
+# For example, for Google AutoML Vision:
+# *.csv
+*.json
+*.yaml
+*.h5
+*.model
+*.pb
+*.tflite
+*.tflite_quantized
+*.lite
+*.edgetpu.tflite
+etc.
+
+# Add more patterns as needed depending on the AutoML tool and file types used
