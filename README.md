@@ -14,10 +14,10 @@
 6. Mahrukh - Business Analyst
 
 ## Branches: 
-1. Main: For Final Product
-2. Experiments: For ML Experiments and tracking
-3. ArchDevelopment: For Architecture DEvelopment
-4. Backup: For Backup
+1. Main: For Final Product [Owner - Team]
+2. Experiments: For ML Experiments and tracking [Owners - Arham, Krishan]
+3. ArchDevelopment: For Architecture DEvelopment [Owner - Yash, Nandani]
+4. Backup: For Backup [Owner - Aasna, Mahrukh]
 
    
 ### Key Phases
