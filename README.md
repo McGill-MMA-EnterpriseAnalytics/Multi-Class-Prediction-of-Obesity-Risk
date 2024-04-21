@@ -13,7 +13,21 @@
 5. Cloud SME - Nandani
 6. Mahrukh - Business Analyst
 
+## Branches: 
+1. Main: For Final Product
+2. Experiments: For ML Experiments and tracking
+3. ArchDevelopment: For Architecture DEvelopment
+4. Backup: For Backup
 
-### Key Considerations
-1. Poetry was used for managing project dependencies. Poetry creates a virtual environment with all dependencies in it. The script used for poetry integration can be found in "10-Assets-For-Documentation/2_Poetry-CLI-Script.txt"
+   
+### Key Phases
+1. Model Environment development with Poetry
+2. Model EDA - Univariate, Bivariaate
+3. Model Experiments with MLFlow tracking using databricks sdk
+4. Final Model Deployment (Dockerization/ API)
+
+WIP
+
+NOTES:
+6. Poetry was used for managing project dependencies. Poetry creates a virtual environment with all dependencies in it. The script used for poetry integration can be found in "10-Assets-For-Documentation/2_Poetry-CLI-Script.txt"
 
