@@ -21,3 +21,6 @@
 etc.
 
 # Add more patterns as needed depending on the AutoML tool and file types used
+# ignore .venv folder
+.venv/
+#
