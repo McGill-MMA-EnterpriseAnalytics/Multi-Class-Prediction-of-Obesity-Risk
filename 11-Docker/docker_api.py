@@ -8,7 +8,6 @@ from sklearn.metrics import accuracy_score
 from fastapi import FastAPI
 from pydantic import BaseModel
 from sklearn.model_selection import StratifiedKFold
-import optuna
 import uvicorn
 from pathlib import Path
 import pickle

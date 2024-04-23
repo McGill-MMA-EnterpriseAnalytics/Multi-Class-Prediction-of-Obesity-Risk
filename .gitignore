@@ -24,3 +24,5 @@ etc.
 # ignore .venv folder
 .venv/
 #
+
+11-Docker/my_project

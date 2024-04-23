@@ -1,5 +1,6 @@
 # Use an official Python runtime as the base image
-FROM python:3.9-slim
+
+FROM --platform=linux/amd64 python:3.10.13
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -11,7 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the FastAPI application code to the working directory
-COPY model_v2.txt ./
+COPY model.pkl ./
 COPY docker_api.py ./
 COPY requirements.txt ./
 COPY train.csv ./
@@ -22,4 +23,4 @@ EXPOSE 80
 ENV PORT=80
 
 # Run the FastAPI application using Uvicorn when the container starts
-CMD ["uvicorn", "model_v2:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["python", "docker_api.py"]
