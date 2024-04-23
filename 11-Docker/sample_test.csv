@@ -1,6 +1,0 @@
-id,Gender,Age,Height,Weight,family_history_with_overweight,FAVC,FCVC,NCP,CAEC,SMOKE,CH2O,SCC,FAF,TUE,CALC,MTRANS,NObeyesdad
-6204,Female,23.0,1.581527,78.089575,yes,yes,2.0,2.070033,Sometimes,no,2.953192,no,0.118271,0.0,no,Public_Transportation,Obesity_Type_I
-7290,Male,17.764764,1.765874,95.324282,yes,yes,2.0,3.0,Sometimes,no,2.0,no,2.0,1.890214,Sometimes,Public_Transportation,Overweight_Level_II
-12297,Male,36.769646,1.779049,100.624553,yes,yes,2.341999,1.135278,Sometimes,no,2.691322,no,2.00123,0.0,Frequently,Automobile,Obesity_Type_I
-14561,Female,26.0,1.652674,111.919155,yes,yes,3.0,3.0,Sometimes,no,2.814517,no,0.0,0.162494,Sometimes,Public_Transportation,Obesity_Type_III
-11127,Male,23.0,1.743841,78.88036,yes,yes,1.880534,3.0,Sometimes,no,2.15687,no,1.587406,0.0,Sometimes,Public_Transportation,Overweight_Level_II
