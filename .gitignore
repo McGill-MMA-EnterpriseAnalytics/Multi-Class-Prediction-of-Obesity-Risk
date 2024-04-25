@@ -1,5 +1,6 @@
 # Ignore .pkl files
 *.pkl
+*.pem
 
 # Ignore large files
 # Adjust the file size limit as needed
