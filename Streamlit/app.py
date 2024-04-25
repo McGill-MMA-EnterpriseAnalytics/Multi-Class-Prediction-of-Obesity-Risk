@@ -32,7 +32,7 @@ def interpret_prediction(prediction):
     elif prediction == 6:
         return "Obesity Level 3"
     else:
-        return "Unknown Obesity Level"
+        return "Unknown Level"
     
 
 def main():
