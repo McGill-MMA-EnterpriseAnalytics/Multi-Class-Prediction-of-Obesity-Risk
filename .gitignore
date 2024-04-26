@@ -22,6 +22,8 @@
 etc.
 
 # Add more patterns as needed depending on the AutoML tool and file types used
-
-# add .venv folder
+# ignore .venv folder
 .venv/
+#
+
+11-Docker/my_project
