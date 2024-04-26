@@ -285,15 +285,21 @@ class InputData(BaseModel):
     TUE: float
     CALC: str
     MTRANS: str
+    DRIFT: int
 
 
 @app.post("/predict", response_model=dict)
 async def predict(item: InputData):
     input_data = item.model_dump()
-
-    # load model
-    with open("model.pkl", "rb") as f:
-        model = pickle.load(f)
+    drift = item.DRIFT
+    if drift == 1:
+        # load model
+        with open("model.pkl", "rb") as f:
+            model = pickle.load(f)
+    else:
+        # load model
+        with open("model2.pkl", "rb") as f:
+            model = pickle.load(f)
 
     # # #Sample input data
     # input_data = {
@@ -317,6 +323,8 @@ async def predict(item: InputData):
     # }
     # convert input to df
     input_df = pd.DataFrame([input_data])
+    # drop drift
+    input_df = input_df.drop(columns=["DRIFT"])
 
     path = "train.csv"
     train_df, val_df, test_df = load_data(path)
@@ -396,9 +404,22 @@ async def predict(item: InputData):
     y_pred_proba = model.predict(X_input)
     y_pred = np.argmax(y_pred_proba)
 
-    print(y_pred)
+    probabilities = []
 
-    return {"prediction": int(y_pred)}
+    for prob in y_pred_proba[0]:
+        probabilities.append(round(prob, 2))
+
+    return {
+        "prediction": int(y_pred),
+        "Prob0": float(probabilities[0]),
+        "Prob1": float(probabilities[1]),
+        "Prob2": float(probabilities[2]),
+        "Prob3": float(probabilities[3]),
+        "Prob4": float(probabilities[4]),
+        "Prob5": float(probabilities[5]),
+        "Prob6": float(probabilities[6]),
+        "Drift": int(drift),
+    }
 
 
 @app.get("/")

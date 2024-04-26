@@ -16,6 +16,7 @@ COPY model.pkl ./
 COPY docker_api.py ./
 COPY requirements.txt ./
 COPY train.csv ./
+COPY model2.pkl ./
 
 
 # Expose port 80 for the FastAPI application
