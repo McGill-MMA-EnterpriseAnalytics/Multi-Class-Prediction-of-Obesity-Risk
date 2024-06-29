@@ -267,6 +267,143 @@
 
 
 
+#### 12. Additional Expert Considerations
+
+- **Cross-Validation:** Ensured model generalizability.
+- **Model Governance:** Versioning, lineage tracking, compliance.
+- **Scalability and Optimization:** Performance tests, scalability checks.
+- **Feedback Loop:** Integrated feedback for continuous improvement.
+
+
+
+#### 13. Branches: 
+1. Main: For Final Product [Owner - Team]
+2. Experiments: For ML Experiments and tracking [Owners - Arham, Krishan]
+3. ArchDevelopment: For CICD  [Owner - Nandani]
+4. Streamlit: For front end [Owner - Nandani]
+5. Data Engineering: For Kafka Streaming [Owner- Yash]
+6. Backup: For Backup [Owner - Aasna, Mahrukh]
+
+   
+### Technologies Used
+
+- **Data Analysis/Model Training:** Python, Jupyter Notebooks
+- **Experiment Tracking:** MLFlow
+- **Model Building:** PyCaret, LightGBM, XGBoost, CatBoost
+- **Hyperparameter Optimization:** Optuna
+- **Containerization:** Docker
+- **Realtime Data Streaming:** Kafka
+- **Version Control and CI/CD:** Git, GitHub Actions
+- **Cloud Deployment:** Azure Machine Learning, Azure Blob Storage
+- **User Interface:** Streamlit
+- **Dependency and Environment Management:** Poetry
+
+## How to Run the Code
+
+### Prerequisites
+
+- **Python 3.8+**
+- **Poetry**
+- **Docker**
+- **Azure Account**
+- **Kafka**
+
+### Setup
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/McGill-MMA-EnterpriseAnalytics/Multi-Class-Prediction-of-Obesity-Risk.git
+    cd Multi-Class-Prediction-of-Obesity-Risk
+    ```
+
+2. **Install Dependencies**
+
+    ```bash
+    poetry install
+    ```
+
+3. **Set Up Environment Variables**
+
+    Create a `.env` file in the root directory and add the necessary environment variables. Example:
+
+    ```env
+    AZURE_SUBSCRIPTION_ID=your_subscription_id
+    AZURE_RESOURCE_GROUP=your_resource_group
+    AZURE_WORKSPACE_NAME=your_workspace_name
+    ```
+
+4. **Start Docker**
+
+    Ensure Docker is running on your machine. Build and run the Docker containers:
+
+    ```bash
+    docker-compose up --build
+    ```
+
+5. **Run Streamlit Application**
+
+    ```bash
+    streamlit run Streamlit/app.py
+    ```
+
+6. **Run Jupyter Notebooks**
+
+    Start Jupyter Lab to run and explore notebooks:
+
+    ```bash
+    poetry run jupyter lab
+    ```
+
+### Deployment
+
+1. **Azure ML Deployment**
+
+    - Configure your Azure workspace by setting up the necessary resources.
+    - Use the provided Azure scripts to deploy models and services.
+
+    ```bash
+    poetry run python deploy/deploy_to_azure.py
+    ```
+
+2. **CI/CD Setup**
+
+    - Ensure GitHub Actions are configured correctly.
+    - Push changes to the repository to trigger CI/CD pipelines.
+
+    ```bash
+    git add .
+    git commit -m "Your commit message"
+    git push origin main
+    ```
+
+### Monitoring and Maintenance
+
+- **Model Monitoring:** Utilize integrated monitoring tools to track model performance and detect drift.
+- **Endpoint Management:** Automated endpoint management to ensure availability and performance.
+
+
+
+### Business Case
+
+Our solution targets healthcare providers for early identification of at-risk patients, public health officials for data-driven policy making, and insurance companies for premium adjustment based on individual risk. The economic impact includes significant healthcare cost savings and revenue generation from tailored wellness programs.
+
+### Acknowledgements
+
+This project is an effort by the team to tackle the global health crisis of obesity by employing advanced data science and machine learning techniques, aiming to make a significant impact in the healthcare sector.
+
+
+### Meet the Team 
+1. Product Manager - Aasna
+2. Machine Learning Engineer - Arham
+3. ML Ops - Krishan
+4. Data Engineer - Yash
+5. Cloud SME - Nandani
+6. Business Analyst - Mahrukh
+
+
+----
+
 <!-- Slide 36 -->
 <p align="center">
   <img src="https://github.com/McGill-MMA-EnterpriseAnalytics/Multi-Class-Prediction-of-Obesity-Risk/blob/main/16-README-Support-Files/Slide36.png">
@@ -314,52 +451,3 @@
 <p align="center">
   <img src="https://github.com/McGill-MMA-EnterpriseAnalytics/Multi-Class-Prediction-of-Obesity-Risk/blob/main/16-README-Support-Files/Slide5.png">
 </p>
-WIP
-
-#### 12. Additional Expert Considerations
-
-- **Cross-Validation:** Ensured model generalizability.
-- **Model Governance:** Versioning, lineage tracking, compliance.
-- **Scalability and Optimization:** Performance tests, scalability checks.
-- **Feedback Loop:** Integrated feedback for continuous improvement.
-
-
-
-#### 13. Branches: 
-1. Main: For Final Product [Owner - Team]
-2. Experiments: For ML Experiments and tracking [Owners - Arham, Krishan]
-3. ArchDevelopment: For CICD  [Owner - Nandani]
-4. Streamlit: For front end [Owner - Nandani]
-5. Data Engineering: For Kafka Streaming [Owner- Yash]
-6. Backup: For Backup [Owner - Aasna, Mahrukh]
-
-   
-### Technologies Used
-
-- **Data Analysis/Model Training:** Python, Jupyter Notebooks
-- **Experiment Tracking:** MLFlow
-- **Model Building:** PyCaret, LightGBM, XGBoost, CatBoost
-- **Hyperparameter Optimization:** Optuna
-- **Containerization:** Docker
-- **Realtime Data Streaming:** Kafka
-- **Version Control and CI/CD:** Git, GitHub Actions
-- **Cloud Deployment:** Azure Machine Learning, Azure Blob Storage
-- **User Interface:** Streamlit
-- **Dependency and Environment Management:** Poetry
-
-### Business Case
-
-Our solution targets healthcare providers for early identification of at-risk patients, public health officials for data-driven policy making, and insurance companies for premium adjustment based on individual risk. The economic impact includes significant healthcare cost savings and revenue generation from tailored wellness programs.
-
-### Acknowledgements
-
-This project is an effort by the team to tackle the global health crisis of obesity by employing advanced data science and machine learning techniques, aiming to make a significant impact in the healthcare sector.
-
-
-### Meet the Team 
-1. Product Manager - Aasna
-2. Machine Learning Engineer - Arham
-3. ML Ops - Krishan
-4. Data Engineer - Yash
-5. Cloud SME - Nandani
-6. Business Analyst - Mahrukh
