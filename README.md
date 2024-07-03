@@ -2,12 +2,15 @@
 
 #### This project is an extension of improving the models, productionizing the project with best practices previously developed for Kaggle Competition "Multi Class Prediction of Obesity Risk"where we placed within the top 5%. The project aims at redoing the project with added production using best practices learned from class MGSC-695-076. For the sake of security, no access keys were shared. 
 
+Tech Stack: Apache Kafka, MLflow, Azure ML, VS Code, Poetry, AutoGluon, H2O, PyCaret, FLAML, PandasAI, Docker, Streamlit, Postman, FastAPI, SHAP
+
 ## Project Overview
 
 #### 1. Data Preparation and Simulation
 
 - **Data Source:** Original Kaggle CSV data split into Model Development and Hold-Off datasets.
 - **Live Data Simulation:** Used Apache Kafka for simulating real-time data feeds.
+
 
 
 <!-- Slide 6 -->
